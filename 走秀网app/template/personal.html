@@ -1,0 +1,36 @@
+<ion-view view-title="我的秀">
+	<div class="bar bar-header bar-assertive">
+        <h1 class="title">我的秀</h1>
+    </div>
+	<ion-content>
+		<div class="list header">
+		    <div class="item item-thumbnail-left">
+		      	<img ng-src="{{data.userimg_url}}">
+		     	<h2>昵称:<span>{{data.userID}}</span></h2>
+		      	<div>
+		      		<a class="button button-assertive" ui-sref="tab.login">登录</a>
+		      		<a class="button button-assertive" ui-sref="tab.register">注册</a>
+		      	</div>
+		    </div>		
+		</div>
+		<div class="list list-inset">
+		    <div class="item item-icon-right">
+		      	我的订单
+		      	<i class="icon ion-ios-arrow-right"></i>
+		    </div>
+		    <div class="item item-icon-right">
+		      	我的优惠券
+		      	<i class="icon ion-ios-arrow-right"></i>
+		    </div>
+		    <div class="item item-icon-right">
+		      	浏览记录
+		      	<i class="icon ion-ios-arrow-right"></i>
+		    </div>
+		    <div class="item item-icon-right">
+		      	我的收藏
+		      	<i class="icon ion-ios-arrow-right"></i>
+		    </div>
+		</div>
+	</ion-content>
+</ion-view>
+

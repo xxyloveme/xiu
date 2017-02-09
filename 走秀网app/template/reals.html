@@ -1,0 +1,12 @@
+<ion-view view-title="商品介绍">
+	<div class="bar bar-header bar-assertive">
+		<button class="button button-icon icon ion-android-arrow-back" ng-click="back()"></button>
+        <h1 class="title">商品介绍</h1>
+        <a class="button">分享</a>
+    </div>
+	<ion-content>
+		  	<div ng-repeat="item in realData" class="play">
+		   	 	<img ng-src="{{item}}"/>
+		 	</div>		 
+	</ion-content>
+</ion-view>

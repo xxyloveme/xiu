@@ -1,0 +1,120 @@
+﻿/*购物车*/
+/*空*/
+.empty-cart{
+    margin-top:30px;
+    text-align:center;
+}
+.empty-cart p{
+    color:#3D3D3D;
+    line-height:40px;
+}
+.empty-cart img{
+    width:130px;
+    height:130px;
+    display:block;
+    margin:0 auto;
+}
+.goShop{
+    width:212px;
+    height:47px;
+    display:block;
+    margin:30px auto;
+}
+/*商品*/
+.cart-sum{
+    line-height:43px;
+    padding:0px 10px;
+    box-sizing:border-box;
+    background:#333333;
+    color:#fff;
+    position:fixed;
+    width: 100%;
+	top: 44px;
+	left: 0;
+	z-index: 99;
+}
+.cart-goods{
+	margin-top: 44px;
+}
+.money{
+    color:red;
+}
+.second{
+    width:170px;
+    float:left;
+}
+.changeNum{
+    width:110px;
+    height:21px;
+    display:inline-block;
+}
+.changeNum button{
+    width:28px;
+    height:21px;
+    background-size:28px 21px;
+    border:none;
+    float:left;
+}
+.dec{
+    background:url("../img/dec-btn.png");
+}
+.add{
+    background:url("../img/add-btn.png");
+}
+.changeNum .goodsNum{
+    width:35px;
+    height:21px;
+    margin:0px 8px;
+    border:1px solid #AFAFAF;
+    text-align:center;
+    float:left;
+}
+.right{
+    text-align:center;
+}
+.delBtn{
+    width:13px;
+    height:16px;
+    background:url("../img/delete.png");
+    background-size:13px 16px;
+    border:none;
+}
+.goodsSize{
+    margin-top:27px;
+}
+/*更多--模块*/
+.more-block{
+    margin:10px;
+}
+.more-block ion-item{
+    width:280px;
+    margin:0 auto;
+}
+.more-block ion-item:first-child{
+    border-radius:15px 15px 0 0;
+}
+.more-block ion-item:last-child{
+    border-radius:0 0 15px 15px;
+}
+.btn-block{
+    text-align:center;
+}
+.exit{
+    width:280px;
+    border-radius:10px;
+}
+/*底部 商品数量*/
+.bottom-num{
+    width:28px;
+    height:28px;
+    line-height:28px;
+    background:red;
+    border-radius:50%;
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    position:absolute;
+    left:170px;
+    bottom:30px;
+    z-index:999;
+}

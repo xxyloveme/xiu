@@ -1,0 +1,42 @@
+<ion-view view-title="购物车">
+    <div class="bar bar-header bar-assertive">
+        <button class="button button-icon icon ion-chevron-left" ng-click="gogoBack()"></button>
+        <h1 class="title">购物车</h1>
+        <button class="button">去结算</button>
+    </div>
+    <!--购物车中有商品-->
+        <div class="cart-sum" ng-show="totalData.totalNum">
+            <p>商品数量：<span class="goods-num">{{ totalData.totalNum }}</span>
+            应付总额(不含运费):<span class="money">&yen;{{ totalData.totalPrice }}</span></p>
+        </div>
+    <ion-content class="has-header">
+        <!--空购物车显示模块-->
+        <div class="empty-cart" ng-show="!totalData.totalNum">
+            <p>您的购物车空空~</p>
+            <img src="img/empty-cart.png"/>
+            <a class="button button-assertive goShop" ui-sref="tab.home">
+               去逛逛
+            </a>
+        </div>
+        
+        <!--[{goodsID:"商品ID",classID:"类别ID",goodsName:"商品名称",goodsListImg:"列表图",price:"价格",discount:"折扣浮点型数据如9.5，0为无折扣",className:"类名",number:"购买数量"}]-->
+        <div class="cart-goods">
+            <ion-list>
+                <ion-item class="item-thumbnail-left" ng-repeat="item in cartList">
+                    <img ng-src="{{ item[3] }}"/>
+                    <div class="second">
+                        <h3>{{ item.goodsName }}</h3>
+                        <h3>{{ item.className }}</h3>
+                        <p>单价：<span>&yen;{{ item.price }}</span></p>
+                        <span>数量：</span>
+                            <div class="changeNum"><button class="dec" ng-click="decBtn($index)"></button><input type="text" class="goodsNum" ng-model="item.number" ng-blur="changeNum($index)"/><button class="add" ng-click="addBtn($index)"></button></div>
+                    </div>
+                    <div class="right">
+                        <button class="delBtn" ng-click="delBtn($index)"></button>
+                        <p class="goodsSize">L</p>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

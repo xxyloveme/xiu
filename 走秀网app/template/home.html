@@ -1,0 +1,30 @@
+﻿<ion-view view-title="zxiu 走秀网">
+    <div class="bar bar-light">
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="请输入搜索内容">
+        </label>
+
+    </div>
+    <ion-content>
+
+        <ion-slide-box does-continue="true" auto-play="true" slide-interval="1000">
+            <ion-slide ng-repeat="item in bannerLists">
+                <img ng-src="{{ item }}" width="100%" height="190px">
+            </ion-slide>
+        </ion-slide-box>
+
+
+        <div class="list" >
+            <a class="item item-thumbnail-left"  ng-repeat="item in goodList"  >
+                <img ng-src="{{item.goodsListImg}}" ng-click="toDetail(item.goodsID)">
+                <p class="introduce">{{ item.goodsName }} </p>
+                <p class="price">￥{{ item.price }} <span>￥{{realPrice[$index]}}</span></p>
+                <p>{{ item.discount}}折</p>
+                <button class="cart" ng-click="addToCar(item.goodsID)"><i class="icon ion-ios-cart-outline"></i></button>
+            </a>
+
+        </div>
+
+    </ion-content>
+</ion-view>

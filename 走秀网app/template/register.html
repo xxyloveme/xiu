@@ -1,0 +1,24 @@
+<ion-view view-title="注册">
+	<div class="bar bar-header bar-assertive">
+		<button class="button button-icon icon ion-android-arrow-back" ng-click="back()"></button>
+        <h1 class="title">注册</h1>
+        <a class="button" ui-sref="tab.login">登录</a>
+    </div>
+	<ion-content>
+		<form class="myLogin">
+			<div>
+				<input type="text" placeholder="账号" ng-model="user.uname"/>
+			</div>
+			<div>
+				<input type="password" class="item-input-inset" placeholder="密码" ng-model="user.upwd"/>
+			</div>
+			<div>
+				<input type="password" class="item-input-inset" placeholder="重复密码" ng-model="user.repwd"/>
+			</div>
+			
+		</form>
+		<div class="registerBtn">
+			<button class="button button-block button-assertive" ng-click="registerBtn()">同意服务协议并注册</button>
+		</div>
+	</ion-content>
+</ion-view>

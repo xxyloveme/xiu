@@ -1,0 +1,89 @@
+.content{
+	width: 100%;
+	text-align: center;
+	background-color: ghostwhite;
+}
+.countdown{
+	width: 100%;
+	background-color: #000;
+	color: gainsboro;
+	line-height: 3em;
+	text-align: left;
+	font-size: 16px;
+	text-indent: 20px;
+	position:fixed;
+	top: 44px;
+	left: 0;
+	z-index: 99;
+}
+.content img{
+	width: 80%;
+	height: auto;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	margin-top: 70px;
+}
+.content .main{
+	padding:0 20px;
+	background-color: ghostwhite;
+	border: 0;
+}
+.content .main div {
+	/*line-height: 40px;*/
+}
+.content .main .price{	
+	width: 75%;
+	max-height: 40px;
+	line-height: 40px;
+	background-color:lightcoral;	
+	text-align: left;
+	color: #fff;
+	margin-left: 50px;
+	overflow: hidden;
+}
+.content .main .angle{
+	display:inline-block;
+	width: 0px;
+	height: 0px;
+	border: 20px solid transparent;
+	border-right: 30px solid lightcoral;
+	float: left;
+	/*margin-left: -25px;*/
+}
+.content .main .circle{
+	width: 0px;
+	height: 0px;
+	border: 5px solid ghostwhite;
+	border-radius: 5px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.discount {
+	text-align: left;
+	margin-top: 30px;
+}
+.discount i{
+	margin-right: 10px;
+	text-decoration: line-through;
+}
+.discount b{
+	float: right;
+	font-weight: normal;
+}
+.slide .slider-slides{
+	width: 100%;
+}
+.detailbox .detail{
+	line-height: 2em;
+	text-indent: 20px;
+}
+.detailbox img{
+	width: 100%;
+	height: auto;
+}
+.play img{
+	width:350px;
+	height: 400px;
+	
+}
